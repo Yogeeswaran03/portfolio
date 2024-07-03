@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       colors: {
         back: '#0F1624',
-        back1: '#1A202C',
+        back1: '#EDF2F8',
       },
       fontFamily: {
         'hero-font': ['Poppins', 'sans-serif'],

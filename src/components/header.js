@@ -39,7 +39,7 @@ export default function Header() {
     };
 
     return (
-        <header id='header' className="fixed top-0 left-0 w-full flex md:justify-between items-center px-5 py-5 bg-back z-50">
+        <header id='header' className="fixed top-0 left-0 w-full flex justify-between items-center px-5 py-5 bg-back z-50">
             <a className="font-bold" href="#home">Yogees</a>
 
             <nav className="hidden md:block">
@@ -87,6 +87,20 @@ export default function Header() {
                 </ul>
             </nav>
 
+            <div className="flex justify-end items-center">
+                <button onClick={() => setToggleMenu(!toggleMenu)} className="block md:hidden mr-4 rounded-md border p-2">
+                    <Bars3Icon className="h-5" />
+                </button>
+
+                <button onClick={toggleTheme} className="rounded-md border p-2">
+                    {isDarkTheme ? (
+                        <SunIcon className="h-5" />
+                    ) : (
+                        <MoonIcon className="h-5" />
+                    )}
+                </button>
+            </div>
+
             {toggleMenu && (
                 <nav className="absolute top-full left-0 w-full bg-primary bg-opacity-95 md:hidden z-10">
                     <ul className="flex flex-col text-center space-y-4 overflow-y-auto pl-4">
@@ -108,18 +122,6 @@ export default function Header() {
                     </ul>
                 </nav>
             )}
-
-            <button onClick={() => setToggleMenu(!toggleMenu)} className="block md:hidden">
-                <Bars3Icon className="h-5" />
-            </button>
-
-            <button onClick={toggleTheme} className="ml-4">
-                {isDarkTheme ? (
-                    <SunIcon className="h-5" />
-                ) : (
-                    <MoonIcon className="h-5" />
-                )}
-            </button>
         </header>
     );
 }

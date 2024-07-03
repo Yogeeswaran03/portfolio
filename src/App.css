@@ -10,16 +10,18 @@
   --bg-about: #FFFFFF;
   --bg-projects: #EDF2F8;
   --bg-projectcard: #FFFFFF;
-  
-
 
   --bg-skills: #FFFFFF;
   --bg-skillcard: #EDF2F8;
 
-
   --bg-contact: #EDF2F8;
   --text-color: #000000;
   --border-color: #000000;
+  --primary-bg-color: #ffffff;
+  --primary-text-color: #000000;
+  --button-border-color: #000000;
+  --button-text-color: #000000;
+
 }
 
 .dark {
@@ -28,15 +30,37 @@
   --bg-home: #0F1624;
   --bg-about: #1A202C;
   --bg-projects: #0F1624;
-  --card-bg-color: #1A202C; /* Dark theme card background color */
-  --card-text-color: #ffffff;
+  --bg-projectcard: #1A202C; /* Dark theme card background color */
   --bg-skills: #1A202C;
   --bg-contact: #0F1624;
   --text-color: #ffffff;
+  --primary-bg-color: #121212;
+  --primary-text-color: #ffffff;
+  --button-border-color: #ffffff;
+  --button-text-color: #ffffff;
   --border-color: #ffffff;
-
-
 }
+#projectcard {
+  background-color: var(--bg-skills);
+  color: var(--primary-text-color);
+}
+
+#projectcard button {
+  border: 1px solid var(--button-border-color);
+  color: var(--button-text-color);
+}
+
+/* SkillCard */
+#skillcard {
+  background-color: var(--bg-projects);
+  color: var(--primary-text-color);
+}
+#contactform {
+  background-color: var(--bg-skills);
+  color: var(--primary-text-color);
+}
+
+
 
 body {
   color: var(--text-color);
@@ -58,10 +82,6 @@ button {
   border-color: var(--border-color);
 }
 
-button:hover {
-  background-color: var(--text-color);
-  color: var(--bg-color);
-}
 
 h1 {
   color: var(--text-color);
@@ -86,6 +106,7 @@ p {
 #skills {
   background-color: var(--bg-skills);
 }
+
 
 #contact {
   background-color: var(--bg-contact);

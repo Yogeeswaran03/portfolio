@@ -43,7 +43,7 @@ export default function Contact() {
         <section id='contact' className='bg-back px-5 py-20 md:px-10 md:py-20'>
             <div className="w-full pb-10">
                 <div className='flex justify-center'>
-                    <h1 className='text-2xl md:text-3xl text-white mb-4 md:mb-7 font-hero-font font-bold relative pb-2'>
+                    <h1 className='text-2xl md:text-3xl mb-4 md:mb-7 font-hero-font font-bold relative pb-2'>
                         Contact Me
                         <span className='block absolute bottom-0 left-0 w-5/6 border-b-4 border-white'></span>
                     </h1>
@@ -53,11 +53,11 @@ export default function Contact() {
                 <div className='md:w-1/2 flex justify-center mb-10 md:mb-0 px-5'>
                     <img src={Contactimg} alt="Contact" className='w-full max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg'/>
                 </div>
-                <div className='md:w-1/2 px-5'>
-                    <div className="max-w-md mx-auto bg-black p-8 rounded-md border border-white shadow-md">
+                <div  className='md:w-1/2 px-5'>
+                    <div id='contactform' className="max-w-md mx-auto  p-8 rounded-md border  shadow-md">
                         <form onSubmit={handleSubmit}>
                             <div className="mb-4">
-                                <label htmlFor="name" className="block text-sm font-medium text-white">Name:</label>
+                                <label htmlFor="name" className="block text-sm font-medium">Name:</label>
                                 <input
                                     type="text"
                                     id="name"
@@ -65,11 +65,11 @@ export default function Contact() {
                                     value={formData.name}
                                     onChange={handleChange}
                                     required
-                                    className="mt-1 block w-full px-3 py-2 border border-white bg-black rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-white"
+                                    className="mt-1 block w-full px-3 py-2 border bg-back1 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                                 />
                             </div>
                             <div className="mb-4">
-                                <label htmlFor="email" className="block text-sm font-medium text-white">Email:</label>
+                                <label htmlFor="email" className="block text-sm font-medium ">Email:</label>
                                 <input
                                     type="email"
                                     id="email"
@@ -77,11 +77,11 @@ export default function Contact() {
                                     value={formData.email}
                                     onChange={handleChange}
                                     required
-                                    className="mt-1 block w-full px-3 py-2 border border-white bg-black rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-white"
+                                    className="mt-1 bg-back1 block w-full px-3 py-2 border  rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                                 />
                             </div>
                             <div className="mb-4">
-                                <label htmlFor="message" className="block text-sm font-medium text-white">Message:</label>
+                                <label htmlFor="message" className="block text-sm font-medium ">Message:</label>
                                 <textarea
                                     id="message"
                                     name="message"
@@ -89,18 +89,18 @@ export default function Contact() {
                                     value={formData.message}
                                     onChange={handleChange}
                                     required
-                                    className="mt-1 block w-full px-3 py-2 border border-white bg-black rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-white"
+                                    className="mt-1 bg-back1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                                 ></textarea>
                             </div>
                             <button
                                 type="submit"
-                                className="w-full bg-white text-black py-2 px-4 rounded-md hover:bg-gray-200 focus:outline-none focus:bg-gray-200"
+                                className="w-full bg-back1 py-2 px-4 text-black rounded-md hover:bg-gray-200 focus:outline-none focus:bg-gray-200"
                             >
                                 Send Message
                             </button>
                         </form>
                         {statusMessage && (
-                            <p className="mt-4 text-center text-white">{statusMessage}</p>
+                            <p className="mt-4 text-center ">{statusMessage}</p>
                         )}
                     </div>
                 </div>
