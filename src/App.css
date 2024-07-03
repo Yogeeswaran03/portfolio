@@ -2,6 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
+/* src/styles.css */
+:root {
+  --bg-header: #EDF2F8;
+
+  --bg-home: #EDF2F8;
+  --bg-about: #FFFFFF;
+  --bg-projects: #EDF2F8;
+  --bg-projectcard: #FFFFFF;
+  
+
+
+  --bg-skills: #FFFFFF;
+  --bg-skillcard: #EDF2F8;
+
+
+  --bg-contact: #EDF2F8;
+  --text-color: #000000;
+  --border-color: #000000;
+}
+
+.dark {
+  --bg-header: #0F1624;
+
+  --bg-home: #0F1624;
+  --bg-about: #1A202C;
+  --bg-projects: #0F1624;
+  --card-bg-color: #1A202C; /* Dark theme card background color */
+  --card-text-color: #ffffff;
+  --bg-skills: #1A202C;
+  --bg-contact: #0F1624;
+  --text-color: #ffffff;
+  --border-color: #ffffff;
+
+
+}
+
+body {
+  color: var(--text-color);
+}
+#header{
+  background-color: var(--bg-header);
+
+}
+a {
+  color: var(--text-color);
+}
+
+a.pb-2 {
+  border-color: var(--border-color);
+}
+
+button {
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+button:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+h1 {
+  color: var(--text-color);
+}
+
+
+p {
+  color: var(--text-color);
+}
+#home {
+  background-color: var(--bg-home);
+}
+
+#about {
+  background-color: var(--bg-about);
+}
+
+#projects {
+  background-color: var(--bg-projects);
+}
+
+#skills {
+  background-color: var(--bg-skills);
+}
+
+#contact {
+  background-color: var(--bg-contact);
+}
+
+
 header ul li {
   @apply px-2;
 }
@@ -10,6 +100,19 @@ header ul li {
 }
 .bg-secondary{
   background: black;
+}
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 

@@ -2,7 +2,7 @@ import { AiOutlineGithub } from "react-icons/ai";
 
 function ProjectCard({ image, title, description, techStack, githubLink }) {
     return (
-        <div className='flex px-2 md:px-0 md:gap-5'>
+        <div id="projectcard" className='flex px-2 md:px-0 md:gap-5'>
             <div className='bg-black p-3 rounded-md w-full max-w-xs mx-auto'>
                 <img className='h-[150px] w-full object-cover rounded-md mb-2' src={image} alt={title} />
                 <div className='flex flex-col'>

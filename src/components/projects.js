@@ -8,52 +8,64 @@ export default function Project() {
             title: "Echo",
             description: "An ecommerce website like Swiggy, built with MERN Stack",
             techStack: "Flutter, Google map API",
-            githubLink: "#"
+            githubLink: "#",
+            bgColor: "card-bg",
+            textColor: "card-text"
         },
         {
             image: proj,
             title: "Echo",
             description: "An ecommerce website like Swiggy, built with MERN Stack",
             techStack: "Flutter, Google map API",
-            githubLink: "#"
+            githubLink: "#",
+            bgColor: "card-bg",
+            textColor: "card-text"
         },
         {
             image: proj,
             title: "Echo",
             description: "An ecommerce website like Swiggy, built with MERN Stack",
             techStack: "Flutter, Google map API",
-            githubLink: "#"
+            githubLink: "#",
+            bgColor: "card-bg",
+            textColor: "card-text"
         },
         {
             image: proj,
             title: "Echo",
             description: "An ecommerce website like Swiggy, built with MERN Stack",
             techStack: "Flutter, Google map API",
-            githubLink: "#"
+            githubLink: "#",
+            bgColor: "card-bg",
+            textColor: "card-text"
         },
         {
             image: proj,
             title: "Echo",
             description: "An ecommerce website like Swiggy, built with MERN Stack",
             techStack: "Flutter, Google map API",
-            githubLink: "#"
+            githubLink: "#",
+            bgColor: "card-bg",
+            textColor: "card-text"
         },
         {
             image: proj,
             title: "Echo",
             description: "An ecommerce website like Swiggy, built with MERN Stack",
             techStack: "Flutter, Google map API",
-            githubLink: "#"
+            githubLink: "#",
+            bgColor: "card-bg",
+            textColor: "card-text"
         }
     ];
 
     return (
-        <section id='projects' className="flex flex-col py-20 px-5 md:py-30 justify-center bg-back text-white">
+        <section id='projects' className="flex flex-col py-20 px-5 md:py-30 justify-center bg-back">
             <div className="w-full">
                 <div className='flex justify-center'>
-                    <h1 className='text-2xl md:text-3xl text-white mb-4 md:mb-7 font-hero-font font-bold relative pb-2'>
+                    <h1 className='text-2xl md:text-3xl mb-4 md:mb-7 font-hero-font font-bold relative pb-2'>
                         Projects
-                        <span className='block absolute bottom-0 left-0 w-5/6 border-b-4 border-white'></span>
+                        <span className='block absolute bottom-0 left-0 w-5/6 border-b-4'></span>
                     </h1>
                 </div>
             </div>

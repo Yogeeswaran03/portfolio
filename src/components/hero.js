@@ -11,19 +11,19 @@ export default function Hero() {
   return (
     <section id='home' className='flex flex-col md:flex-row px-6 md:px-12 pt-[12rem] md:pt-40 pb-20 md:pb-40 bg-back justify-center items-center'>
       <div className='md:flex md:flex-col px-8 md:pl-12 md:justify-center pb-15 md:w-1/2 order-2 md:order-1'>
-        <h1 className='text-white text-3xl md:text-5xl font-hero-font'>
+        <h1 className='text-3xl md:text-5xl font-hero-font'>
           Hi, <br /> I'm Yogeeswaran M
           <p className='md:text-2xl text-xl mt-2 md:mt-4'>
             I'm a full-stack developer
           </p>
         </h1>
         <div className='flex py-5 justify-start'>
-          <a className='pr-5 text-white hover:text-white' href='https://www.linkedin.com/in/yogeeswaran-m/'><AiOutlineLinkedin size={40} /></a>
-          <a className='pr-5 text-white hover:text-white' href='https://github.com/Yogeeswaran03'><AiOutlineGithub size={40} /></a>
-          <a className='pr-5 text-white hover:text-white' href='mailto:yogees97@gmail.com'><SiGmail size={35} /></a>
+          <a className='pr-5 hover:text-white' href='https://www.linkedin.com/in/yogeeswaran-m/'><AiOutlineLinkedin size={40} /></a>
+          <a className='pr-5 hover:text-white' href='https://github.com/Yogeeswaran03'><AiOutlineGithub size={40} /></a>
+          <a className='pr-5 hover:text-white' href='mailto:yogees97@gmail.com'><SiGmail size={35} /></a>
         </div>
         <div className='flex justify-start'>
-          <button className="border-2 border-white text-white px-3 py-2 rounded-md mt-5 md:mt-0 bg-transparent hover:bg-white hover:text-black transition duration-300"
+          <button className="border-2 px-3 py-2 rounded-md mt-5 md:mt-0 bg-transparent hover:bg-white hover:text-black transition duration-300"
                   onClick={handleResumeClick}>
             Resume
           </button>

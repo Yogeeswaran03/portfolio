@@ -1,9 +1,10 @@
-import { Bars3Icon } from '@heroicons/react/24/solid';
+import { Bars3Icon, SunIcon, MoonIcon } from '@heroicons/react/24/solid'; // Import Sun and Moon icons
 import { useState, useEffect } from 'react';
 
 export default function Header() {
     const [toggleMenu, setToggleMenu] = useState(false);
     const [activeSection, setActiveSection] = useState('');
+    const [isDarkTheme, setIsDarkTheme] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,16 +26,28 @@ export default function Header() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    useEffect(() => {
+        if (isDarkTheme) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    }, [isDarkTheme]);
+
+    const toggleTheme = () => {
+        setIsDarkTheme((prevTheme) => !prevTheme);
+    };
+
     return (
-        <header className="fixed top-0 left-0 w-full flex justify-between items-center px-5 py-5 bg-back z-50">
-            <a className="font-bold text-white" href="#home">Yogees</a>
+        <header id='header' className="fixed top-0 left-0 w-full flex md:justify-between items-center px-5 py-5 bg-back z-50">
+            <a className="font-bold" href="#home">Yogees</a>
 
             <nav className="hidden md:block">
-                <ul className="flex text-white space-x-6">
+                <ul className="flex space-x-6">
                     <li>
                         <a
                             href="#home"
-                            className={`pb-2 ${activeSection === 'home' ? 'border-b-2 border-white' : ''}`}
+                            className={`pb-2 ${activeSection === 'home' ? 'border-b-2' : ''}`}
                         >
                             Home
                         </a>
@@ -42,7 +55,7 @@ export default function Header() {
                     <li>
                         <a
                             href="#about"
-                            className={`pb-2 ${activeSection === 'about' ? 'border-b-2 border-white' : ''}`}
+                            className={`pb-2 ${activeSection === 'about' ? 'border-b-2' : ''}`}
                         >
                             About
                         </a>
@@ -50,7 +63,7 @@ export default function Header() {
                     <li>
                         <a
                             href="#projects"
-                            className={`pb-2 ${activeSection === 'projects' ? 'border-b-2 border-white' : ''}`}
+                            className={`pb-2 ${activeSection === 'projects' ? 'border-b-2' : ''}`}
                         >
                             Project
                         </a>
@@ -58,7 +71,7 @@ export default function Header() {
                     <li>
                         <a
                             href="#skills"
-                            className={`pb-2 ${activeSection === 'skills' ? 'border-b-2 border-white' : ''}`}
+                            className={`pb-2 ${activeSection === 'skills' ? 'border-b-2' : ''}`}
                         >
                             Skills
                         </a>
@@ -66,7 +79,7 @@ export default function Header() {
                     <li>
                         <a
                             href="#contact"
-                            className={`pb-2 ${activeSection === 'contact' ? 'border-b-2 border-white' : ''}`}
+                            className={`pb-2 ${activeSection === 'contact' ? 'border-b-2' : ''}`}
                         >
                             Contact
                         </a>
@@ -76,7 +89,7 @@ export default function Header() {
 
             {toggleMenu && (
                 <nav className="absolute top-full left-0 w-full bg-primary bg-opacity-95 md:hidden z-10">
-                    <ul className="flex flex-col text-white text-center space-y-4 overflow-y-auto pl-4">
+                    <ul className="flex flex-col text-center space-y-4 overflow-y-auto pl-4">
                         <li className="py-2 list-disc flex justify-center items-center">
                             <a href="#home" onClick={() => setToggleMenu(false)}>Home</a>
                         </li>
@@ -97,7 +110,15 @@ export default function Header() {
             )}
 
             <button onClick={() => setToggleMenu(!toggleMenu)} className="block md:hidden">
-                <Bars3Icon className="text-white h-5" />
+                <Bars3Icon className="h-5" />
+            </button>
+
+            <button onClick={toggleTheme} className="ml-4">
+                {isDarkTheme ? (
+                    <SunIcon className="h-5" />
+                ) : (
+                    <MoonIcon className="h-5" />
+                )}
             </button>
         </header>
     );
