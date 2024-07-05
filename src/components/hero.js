@@ -9,7 +9,7 @@ export default function Hero() {
   };
 
   return (
-    <section id='home' className='flex flex-col md:flex-row px-6 md:px-12 pt-[12rem] md:pt-40 pb-20 md:pb-40 bg-back justify-center items-center'>
+    <section id='home' className='flex flex-col md:flex-row px-4 md:px-12 pt-[12rem] md:pt-40 pb-20 md:pb-40 bg-back justify-center items-center'>
       <div className='md:flex md:flex-col px-8 md:pl-12 md:justify-center pb-15 md:w-1/2 order-2 md:order-1'>
         <h1 className='text-3xl md:text-5xl font-hero-font'>
           Hi, <br /> I'm Yogeeswaran M

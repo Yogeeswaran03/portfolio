@@ -5,25 +5,43 @@ import htmlimg from '../assets/html-removebg-preview.png';
 import mongooimg from '../assets/mongoo-removebg-preview.png';
 import javaimg from '../assets/java-removebg-preview.png';
 import tailwindimg from '../assets/tailwind-removebg-preview.png';
+import flutter from '../assets/flutter-logo-removebg-preview.png';
+import css from '../assets/logo-css-3-1024.png';
+import git from '../assets/git-logo-11609362364wwhuzvtx5h-removebg-preview.png';
+import sql from '../assets/mysql_PNG23-removebg-preview.png';
+import firebase from '../assets/png-transparent-firebase-hd-logo-removebg-preview.png';
+import spring from '../assets/spring-boot-logo-removebg-preview.png';
+import bootstrap from '../assets/bootstrap-logo-removebg-preview.png';
+import python from '../assets/python-logo-png-open-2000-removebg-preview.png';
+import postman from '../assets/png-transparent-postman-hd-logo-removebg-preview.png';
+import js from '../assets/js.png';
+import node from '../assets/text-nodejs-javascript-sign-signage-removebg-preview.png';
 
 export default function Skills({ theme }) {
     const skillsData = [
         { image: javaimg, title: "JAVA" },
+        { image: spring, title: "Spring Boot" },
+
         { image: htmlimg, title: "HTML" },
-        { image: mongooimg, title: "MongoDB" },
+        { image: css, title: "CSS" },       
+         { image: js, title: "Javascript" },
+
+        { image: bootstrap, title: "Bootstrap" },
+
+
         { image: reactimg, title: "React" },
+        { image: node, title: "Node Js" },
+
         { image: tailwindimg, title: "Tailwind" },
-        { image: reactimg, title: "React" },
-        { image: reactimg, title: "React" },
-        { image: reactimg, title: "React" },
-        { image: reactimg, title: "React" },
-        { image: reactimg, title: "React" },
-        { image: reactimg, title: "React" },
-        { image: reactimg, title: "React" },
-        { image: reactimg, title: "React" },
-        { image: reactimg, title: "React" },
-        { image: reactimg, title: "React" },
-        { image: reactimg, title: "React" },
+        { image: mongooimg, title: "MongoDB" },
+
+        { image: sql, title: "My SQL" },
+        { image: firebase, title: "Firebase" },
+
+        { image: flutter, title: "Flutter" },
+        { image: python, title: "Python" },
+        { image: git, title: "Git" },
+        { image: postman, title: "Postman" },
     ];
 
     return (

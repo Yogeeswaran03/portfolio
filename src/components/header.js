@@ -39,7 +39,7 @@ export default function Header() {
     };
 
     return (
-        <header id='header' className="fixed top-0 left-0 w-full flex justify-between items-center px-5 py-5 bg-back z-50">
+        <header id='header' className="fixed top-0 left-0 w-full flex justify-between items-center px-5 py-4 bg-back z-50">
             <a className="font-bold" href="#home">Yogees</a>
 
             <nav className="hidden md:block">
@@ -102,7 +102,7 @@ export default function Header() {
             </div>
 
             {toggleMenu && (
-                <nav className="absolute top-full left-0 w-full bg-primary bg-opacity-95 md:hidden z-10">
+                <nav id='header1' className="absolute top-full left-0 w-full  bg-opacity-95 md:hidden z-10">
                     <ul className="flex flex-col text-center space-y-4 overflow-y-auto pl-4">
                         <li className="py-2 list-disc flex justify-center items-center">
                             <a href="#home" onClick={() => setToggleMenu(false)}>Home</a>
