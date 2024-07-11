@@ -2,7 +2,7 @@ import Aboutimg from '../assets/about.png';
 
 export default function About() {
   return (
-    <section id='about' className='flex flex-col md:flex-row bg-back1 px-5 pt-20 md:pt-27 pb-20 md:pb-27'>
+    <section id='about' className='flex flex-col md:flex-row bg-back1 px-5 pt-17 md:pt-27 pb-20 md:pb-27'>
       <div className='md:w-1/2 flex justify-center mb-5 md:mb-0 px-5'>
         <img src={Aboutimg} alt="About Me" className='w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl' />
       </div>

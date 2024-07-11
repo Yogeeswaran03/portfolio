@@ -5,9 +5,9 @@ function ProjectCard({ image, title, description, techStack, githubLink, theme }
     const cardClass = theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-white text-black'; // Apply theme class
 
     return (
-        <div id="projectcard" className={`flex px-3 rounded-md md:p-3 w-full max-w-sm mx-auto ${cardClass}`}>
+        <div id="projectcard" className={`flex px-3 rounded-md p-3 w-full max-w-sm mx-auto ${cardClass}`}>
             <div className='flex flex-col'>
-                <img className='h-[150px] w-full object-cover rounded-md mb-2' src={image} alt={title} />
+                <img className='h-[190px] w-full object-cover rounded-md mb-2' src={image} alt={title} />
                 <h1 className='text-xl md:text-xl font-hero-font font-semibold relative pb-1'>{title}</h1>
                 <p className='text-sm font-hero-font text-start'>{description}</p>
                 <p className='text-sm font-hero-font pt-2 pb-3 text-start'>Tech Stack: {techStack}</p>
