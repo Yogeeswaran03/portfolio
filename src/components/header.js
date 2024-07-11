@@ -40,7 +40,7 @@ export default function Header() {
 
     return (
         <header id='header' className="fixed top-0 left-0 w-full flex justify-between items-center px-5 py-4 bg-back z-50">
-            <a className="font-bold" href="#home">Yogees</a>
+            <a className=" font-hero-font1" href="#home">YOGEES</a>
 
             <nav className="hidden md:block">
                 <ul className="flex space-x-6">

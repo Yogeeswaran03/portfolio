@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import SkillCard from './SkillCard';
 import reactimg from '../assets/react-removebg-preview.png';
 import htmlimg from '../assets/html-removebg-preview.png';
@@ -21,23 +22,16 @@ export default function Skills({ theme }) {
     const skillsData = [
         { image: javaimg, title: "JAVA" },
         { image: spring, title: "Spring Boot" },
-
         { image: htmlimg, title: "HTML" },
-        { image: css, title: "CSS" },       
-         { image: js, title: "Javascript" },
-
+        { image: css, title: "CSS" },
+        { image: js, title: "Javascript" },
         { image: bootstrap, title: "Bootstrap" },
-
-
         { image: reactimg, title: "React" },
         { image: node, title: "Node Js" },
-
         { image: tailwindimg, title: "Tailwind" },
         { image: mongooimg, title: "MongoDB" },
-
         { image: sql, title: "My SQL" },
         { image: firebase, title: "Firebase" },
-
         { image: flutter, title: "Flutter" },
         { image: python, title: "Python" },
         { image: git, title: "Git" },
@@ -58,7 +52,9 @@ export default function Skills({ theme }) {
             <div className='w-full px-5 py-10 md:px-10 md:py-10 flex justify-center'>
                 <ul className='flex flex-wrap justify-center gap-7 md:gap-10'>
                     {skillsData.map((skill, index) => (
-                        <SkillCard key={index} image={skill.image} title={skill.title} theme={theme} />
+                        <motion.li key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                            <SkillCard image={skill.image} title={skill.title} theme={theme} />
+                        </motion.li>
                     ))}
                 </ul>
             </div>

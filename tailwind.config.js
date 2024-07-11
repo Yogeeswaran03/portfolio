@@ -11,6 +11,8 @@ module.exports = {
       },
       fontFamily: {
         'hero-font': ['Poppins', 'sans-serif'],
+        'hero-font1': ['Montserrat', 'sans-serif'],
+
       },
     },
   },
