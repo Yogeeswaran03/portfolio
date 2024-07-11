@@ -14,7 +14,7 @@ export default function Hero() {
         <h1 className='text-3xl md:text-5xl font-hero-font'>
           Hi, <br /> I'm Yogeeswaran M
           <p className='md:text-2xl text-xl mt-2 md:mt-4'>
-            I'm a Creative Solutions Developer
+            I'm a Tech Enthusiast
           </p>
         </h1>
         <div className='flex py-5 justify-start'>
