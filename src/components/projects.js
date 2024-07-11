@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import echo from '../assets/1.jpg';
 import nearo from '../assets/2.jpg';
@@ -71,12 +72,12 @@ export default function Project() {
     };
 
     return (
-        <section id='projects' className="flex flex-col py-20 px-10 md:py-30 justify-center bg-back">
+        <section id='projects' className="flex flex-col py-20 px-5 md:py-20 md:px-10 justify-center bg-back text-white">
             <div className="w-full">
                 <div className='flex justify-center'>
                     <h1 className='text-2xl md:text-3xl mb-4 md:mb-7 font-hero-font font-bold relative pb-2'>
                         Projects
-                        <span id='' className='block absolute bottom-0 left-0 w-5/6 border-b-4 '></span>
+                        <span className='block absolute bottom-0 left-0 w-5/6 border-b-4'></span>
                     </h1>
                 </div>
             </div>
@@ -93,8 +94,8 @@ export default function Project() {
                         </motion.div>
                     ))}
                 </div>
-                <div className="w-full flex flex-col md:flex-row gap-10 justify-evenly">
-                    {projects.slice(3, 6).map((project, index) => (
+                <div className="w-full flex flex-wrap gap-10 justify-center">
+                    {projects.slice(3).map((project, index) => (
                         <motion.div key={index} variants={itemVariants}>
                             <ProjectCard {...project} />
                         </motion.div>
