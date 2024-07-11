@@ -45,7 +45,7 @@ export default function Contact() {
                 <div className='flex justify-center'>
                     <h1 className='text-2xl md:text-3xl mb-4 md:mb-7 font-hero-font font-bold relative pb-2'>
                         Contact Me
-                        <span className='block absolute bottom-0 left-0 w-5/6 border-b-4 border-white'></span>
+                        <span className='block absolute bottom-0 left-0 w-5/6 border-b-4 '></span>
                     </h1>
                 </div>
             </div>

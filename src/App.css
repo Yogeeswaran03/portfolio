@@ -76,6 +76,10 @@ body {
   background-color: var(--bg-header1);
 
 }
+span{
+  border-color: var(--border-color);
+
+}
 a {
   color: var(--text-color);
 }
@@ -113,12 +117,16 @@ p {
 #skills {
   background-color: var(--bg-skills);
   color: var(--text-color);
+  border-color: var(--border-color);
+
 
 }
 
 
 #contact {
   background-color: var(--bg-contact);
+  border-color: var(--border-color);
+
 }
 
 

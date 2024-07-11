@@ -42,9 +42,9 @@ export default function Skills({ theme }) {
         <section id='skills' className="flex flex-col py-20 px-5 md:py-20 md:px-10 justify-center bg-back1 text-white">
             <div className="w-full">
                 <div className='flex justify-center'>
-                    <h1 className='text-2xl md:text-3xl mb-4 md:mb-7 font-hero-font font-bold relative pb-2'>
+                    <h1 className='text-2xl md:text-3xl mb-4 md:mb-7 justify-center font-hero-font font-bold relative pb-2'>
                         Skills
-                        <span className='block absolute bottom-0 left-0 w-5/6 border-b-4 border-white'></span>
+                        <span className='block absolute bottom-0 left-0 w-5/6 border-b-4'></span>
                     </h1>
                 </div>
             </div>
