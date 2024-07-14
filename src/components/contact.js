@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import Contactimg from '../assets/email1.png';
+import Contactimg from '../assets/email.png';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
