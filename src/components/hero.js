@@ -1,4 +1,4 @@
-import Heroimg from '../assets/yogees1.JPG';
+import Heroimg from '../assets/yogees.JPG';
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
 
