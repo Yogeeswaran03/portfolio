@@ -1,4 +1,4 @@
-import Heroimg from '../assets/yogees.JPG';
+import Heroimg from '../assets/yogees1.JPG';
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
 
@@ -18,9 +18,9 @@ export default function Hero() {
           </p>
         </h1>
         <div className='flex py-5 justify-start'>
-          <a className='pr-5 hover:text-white' href='https://www.linkedin.com/in/yogeeswaran-m/'><AiOutlineLinkedin size={40} /></a>
-          <a className='pr-5 hover:text-white' href='https://github.com/Yogeeswaran03'><AiOutlineGithub size={40} /></a>
-          <a className='pr-5 hover:text-white' href='mailto:yogees97@gmail.com'><SiGmail size={35} /></a>
+          <a className='pr-5 ' href='https://www.linkedin.com/in/yogeeswaran-m/'><AiOutlineLinkedin size={40} /></a>
+          <a className='pr-5' href='https://github.com/Yogeeswaran03'><AiOutlineGithub size={40} /></a>
+          <a className='pr-5' href='mailto:yogees97@gmail.com'><SiGmail size={35} /></a>
         </div>
         <div className='flex justify-start'>
           <button className="border-2 px-3 py-2 rounded-md mt-5 md:mt-0 bg-transparent hover:bg-white hover:text-black transition duration-300"
