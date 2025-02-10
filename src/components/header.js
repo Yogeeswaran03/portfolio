@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 export default function Header() {
     const [toggleMenu, setToggleMenu] = useState(false);
     const [activeSection, setActiveSection] = useState('');
-    const [isDarkTheme, setIsDarkTheme] = useState(false);
+    const [isDarkTheme, setIsDarkTheme] = useState(true);
 
     useEffect(() => {
         const handleScroll = () => {
